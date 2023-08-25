@@ -45,8 +45,8 @@ function imprimirContacto(contacto) {
 // Función para borrar un contacto de la lista por su ID
 function borrarContactoPorId(id) {
    var indice = -1;
-   for (var i = 0; i < listaDeContactos.length; i++) {
-     if (listaDeContactos[i].id === id) {
+   for (var i = 0; i < Contacto.length; i++) {
+     if (Contacto[i].id === id) {
        indice = i;
        
        indice = i;
@@ -63,8 +63,8 @@ function borrarContactoPorId(id) {
      
   
  if (indice !== -1) {
-     var contactoEliminado = listaDeContactos.splice(indice, 1)[0];
-     console.log("Contacto eliminado:", contactoEliminado.nombres, contactoEliminado.apellidos);
+     var contactoEliminado = Contacto.splice(indice, 1)[0];
+     console.log("Contacto eliminado:", contactoEliminado.nombres, contactoEliminado);
    } else {
      console.log("Contacto no encontrado con ID:", id);
    }
@@ -88,3 +88,8 @@ function borrarContactoPorId(id) {
  // Imprimir la lista de contactos actualizada
  console.log ("Lista de contactos:",contacto )
 }
+actualizarContact
+actualizarContactoPorId(2, { nombre: "Eugenia", telefono: "555-555-5555" });
+
+// Imprimir la lista de contactos actualizada
+console.log("Lista de contactos:", contacto);
