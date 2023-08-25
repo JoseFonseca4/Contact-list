@@ -42,3 +42,49 @@ function imprimirContacto(contacto) {
     console.log(contacto)
 }
 }
+// Función para borrar un contacto de la lista por su ID
+function borrarContactoPorId(id) {
+   var indice = -1;
+   for (var i = 0; i < listaDeContactos.length; i++) {
+     if (listaDeContactos[i].id === id) {
+       indice = i;
+       
+       indice = i;
+      
+ 
+       indice = i
+ 
+      
+ break;
+     }
+   }
+ 
+   
+     
+  
+ if (indice !== -1) {
+     var contactoEliminado = listaDeContactos.splice(indice, 1)[0];
+     console.log("Contacto eliminado:", contactoEliminado.nombres, contactoEliminado.apellidos);
+   } else {
+     console.log("Contacto no encontrado con ID:", id);
+   }
+ 
+ // Llamar a la función para agregar un nuevo contacto
+ var nuevoContacto = {
+   
+  
+ id: 3,
+
+ 
+ };
+ ag
+ agregarContacto(nuevoContacto);
+ 
+ // Llamar a la función para borrar un contacto por su ID
+ 
+ borrar
+ borrarContactoPorId(1);
+ 
+ // Imprimir la lista de contactos actualizada
+ console.log ("Lista de contactos:",contacto )
+}
